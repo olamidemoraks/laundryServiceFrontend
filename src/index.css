@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #111111;
+  color: #fff;
+}
+
+.black_glassmorphism{
+background: rgba(60, 60, 60, 0.73);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.8px);
+-webkit-backdrop-filter: blur(1.8px);
+}
+
+.bubble1{
+  
+  /* position: relative; */
+  animation: bubble_float 6s ease-in-out infinite;
+}
+
+.bubble2{
+  /* position: relative; */
+
+  animation: bubble_float 4s ease-in-out infinite;
+}
+.bubble3{
+  /* position: relative; */
+  animation: bubble_float 7s ease-in-out infinite;
+}
+ 
+@keyframes bubble_float {
+  0% { transform: translateY(0px); opacity: .8; scale: 1;}
+  50% { transform: translateY(-10px); opacity: .6; scale: .8;}
+  100% { transform: translateY(0px); opacity: .1; scale: .6;}
+}
+
+.navLink::after{
+  content: "";
+  width: 2rem;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: -2rem;
+  transition: .2s linear;
+}
+.navLink::before{
+  content: "";
+  width: 2rem;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  right: -2rem;
+  transition: .2s linear;
+
+}
