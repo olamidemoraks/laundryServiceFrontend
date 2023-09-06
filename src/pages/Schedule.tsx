@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useCart } from "react-use-cart";
 import { toast } from "react-hot-toast";
-import { BsXCircleFill, BsChevronDown, BsBox2Fill } from "react-icons/bs";
+import { BsXCircleFill, BsBox2Fill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import { QueryClient, useMutation, useQuery } from "react-query";
 

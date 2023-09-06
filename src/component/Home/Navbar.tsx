@@ -13,7 +13,6 @@ const Navbar: React.FC<NavbarProps> = () => {
   const navigate = useNavigate();
   const { profile, sendLogout } = useAuth();
 
-  const darkMode: boolean = true;
   const handleLogout = () => {
     sendLogout();
     googleLogout();

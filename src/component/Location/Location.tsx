@@ -18,7 +18,7 @@ const Location: React.FC<LocationProps> = () => {
 
   const { data: profile } = useQuery({
     queryKey: "profile",
-    queryFn: () => showMe(token),
+    queryFn: showMe,
     enabled: !!token,
     refetchOnMount: false,
     refetchOnWindowFocus: false,
