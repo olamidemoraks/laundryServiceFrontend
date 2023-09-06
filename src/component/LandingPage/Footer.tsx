@@ -9,7 +9,7 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <div className="mx-auto md:w-[70%] w-[90%] mt-10 py-7 z-50">
       <motion.div
-        variants={zoomIn(0.3, 1.5)}
+        variants={zoomIn(0.3, 1.0)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.23 }}

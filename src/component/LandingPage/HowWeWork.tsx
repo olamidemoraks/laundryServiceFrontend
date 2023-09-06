@@ -47,7 +47,7 @@ const HowWeWork: React.FC<HowWeWorkProps> = () => {
         id="works"
         className=" bg-[url(./washinMachine.jpg)] bg-no-repeat bg-cover w-full rounded-[.9rem]"
       >
-        <div className="backdrop-brightness-50 h-full w-full  p-12 rounded-[.9rem]">
+        <div className="backdrop-brightness-50 h-full w-full  md:p-12 p-2 rounded-[.9rem]">
           <motion.h1
             variants={fadeIn("right", "tween", 0.3, 1.3)}
             className="md:text-[2rem] text-[1.3rem] font-semibold leading-10 capitalize"

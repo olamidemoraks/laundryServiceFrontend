@@ -30,11 +30,11 @@ const Orders: React.FC<OrdersProps> = () => {
   });
 
   //to get the present queries
-  let params: any = Object.fromEntries(searchParams);
+  const params: any = Object.fromEntries(searchParams);
 
   const [pageNumber, setPageNumber] = useState(1);
-  let order: Order[] = data?.reservationWithUser;
-  let numOfPage = data?.numOfPage;
+  const order: Order[] = data?.reservationWithUser;
+  const numOfPage = data?.numOfPage;
   const mutation = useMutation({
     mutationFn: updateReservationStatus,
   });
@@ -58,7 +58,7 @@ const Orders: React.FC<OrdersProps> = () => {
 
   useEffect(() => {
     refetch();
-  }, [mutation.isSuccess, searchParams]);
+  }, [mutation.isSuccess, refetch, searchParams]);
 
   if (isLoading) {
     return (

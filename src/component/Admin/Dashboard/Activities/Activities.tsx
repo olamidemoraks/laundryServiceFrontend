@@ -27,7 +27,7 @@ type ActivitiesProps = {
 
 const Activities: React.FC<ActivitiesProps> = ({ overview }) => {
   return (
-    <div className=" grid md:grid-cols-3 grid-cols-2 mt-4 gap-7">
+    <div className=" grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4 gap-7">
       <ActivityCard
         label="Total Order"
         value={overview?.totalReservations ?? 0}

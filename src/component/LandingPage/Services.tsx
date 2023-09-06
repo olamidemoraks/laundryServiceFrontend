@@ -45,7 +45,7 @@ const Services: React.FC<ServicesProps> = () => {
           We Collect, Clean and Deliver <br /> Your Laundry in less than 4 days
         </motion.h1>
         <div className="flex w-full mt-10 items-center gap-5 ">
-          <div className="md:flex-1 flex-[0.2] grid grid-rows-2 gap-6">
+          <div className="md:flex-1 flex-[0.2] md:grid grid-rows-2 hidden gap-6 ">
             <motion.div
               variants={zoomIn(0.3, 1.4)}
               className="rounded-[.8rem] lg:h-[20rem] lg:w-[23rem]  md:h-[15rem] md:w-[17rem] h-[12rem] w-[15rem] relative"

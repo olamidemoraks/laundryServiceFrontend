@@ -44,19 +44,19 @@ const TodayPickup: React.FC<TodayPickupProps> = ({ delivery }) => {
               }  whitespace-nowrap text-neutral-300 hover:bg-mid-black cursor-pointer`}
             >
               <td className="md:px-6 px-2  py-3">{idx + 1}</td>
-              <td className="md:px-6 px-2  py-3">#{item.receipt}</td>
-              <td className="md:px-6 px-2  py-3">{item.pickupTime}</td>
+              <td className="md:px-6 px-2  py-3">#{item?.receipt}</td>
+              <td className="md:px-6 px-2  py-3">{item?.pickupTime}</td>
               <td className="md:px-6 px-2  py-3 ">
-                {item.totalItems}/<small>items</small>{" "}
+                {item?.totalItems}/<small>items</small>{" "}
               </td>
               <td className="md:px-6 px-2 max-sm:hidden text-light-gold font-medium">
-                ₦ {item.totalAmount.toLocaleString()}
+                ₦ {item?.totalAmount.toLocaleString()}
               </td>
               {/* <td className="md:px-6 px-2 max-sm:hidden  ">{item.email}</td> */}
               <td className="md:px-6 px-2  py-3">
                 <Link
                   className="bg-indigo-700/30 px-2 p-1 rounded-[.3rem] hover:border-[2px] hover:border-indigo-700/30 hover:bg-transparent ease-linear "
-                  to={`order/${item._id}`}
+                  to={`order/${item?._id}`}
                 >
                   View More
                 </Link>

@@ -19,8 +19,8 @@ const Navbar: React.FC<NavbarProps> = () => {
     navigate("/authenticate");
   };
   return (
-    <div className="flex justify-end px-[4rem] border-b border-neutral-800 pb-2">
-      <div className=" w-[12rem] flex md:scale-100 scale-0 md:translate-x-0 -translate-x-[10rem] items-center mt-5 gap-3 ease-out duration-300">
+    <div className="flex justify-end border-b border-neutral-800 pb-2">
+      <div className="  flex  items-center mt-5 gap-3 ease-out duration-300">
         <div className="flex flex-col items-end">
           <p className="text-[.66rem] font-bold text-neutral-200 tracking-wider uppercase">
             {profile.name}

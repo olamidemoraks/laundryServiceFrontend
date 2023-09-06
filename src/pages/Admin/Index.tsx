@@ -3,6 +3,7 @@ import Activities from "../../component/Admin/Dashboard/Activities/Activities";
 import TodayPickup from "../../component/Admin/Dashboard/TodayPickup/TodayPickup";
 import { useQuery } from "react-query";
 import { getOverview } from "../../app/api/overview";
+import Loader from "../../component/Utils/Loader";
 
 type IndexProps = {};
 
@@ -12,6 +13,9 @@ const Index: React.FC<IndexProps> = () => {
     queryFn: getOverview,
   });
 
+  if (isLoading || !overview) {
+    return <Loader />;
+  }
   return (
     <div className="md:px-[4rem] px-[1rem] mt-4 w-full min-h-[70vh] ">
       <div className="flex flex-col gap-1 pb-4">

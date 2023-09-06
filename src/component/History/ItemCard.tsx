@@ -10,7 +10,11 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
     <div className="flex justify-between">
       <div className=" flex gap-3">
         <div className="md:w-[3rem] md:h-[3rem] w-[3rem] h-[3rem] flex items-center justify-center  rounded-[.9rem] bg-mid-black">
-          <img src={item.image_url} alt="items" className=" w-2/3" />
+          <img
+            src={item.image_url}
+            alt="items"
+            className="w-full h-full rounded-[.9rem] object-cover"
+          />
         </div>
         <div>
           <p className=" text-[.9rem]">

@@ -1,7 +1,6 @@
 import { GoogleLogin } from "@react-oauth/google";
 import decode from "jwt-decode";
 import React, { useState } from "react";
-import { AiFillApple } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
 import { motion } from "framer-motion";
@@ -22,7 +21,7 @@ const Authentication: React.FC<AuthenticationProps> = () => {
   const { setCredential } = useAuth();
   const navigate = useNavigate();
   const [authMode, setAuthMode] = useState("login");
-  let isLogin = authMode === "login" ? true : false;
+  const isLogin = authMode === "login" ? true : false;
   const mutation = useMutation({
     mutationFn: externalSignin,
     onSuccess: async (data) => {
@@ -77,10 +76,13 @@ const Authentication: React.FC<AuthenticationProps> = () => {
             >
               <AiFillGoogleCircle />{" "}
             </div> */}
-            <div className="flex items-center justify-center bg-mid-black w-full h-[2.6rem] rounded-md border border-secondary-black/80 text-[1.3rem] hover:bg-mid-black/60 transition cursor-pointer">
+            {/* <div className="flex items-center justify-center bg-mid-black w-full h-[2.6rem] rounded-md border border-secondary-black/80 text-[1.3rem] hover:bg-mid-black/60 transition cursor-pointer">
               <AiFillApple />
-            </div>
+            </div> */}
           </div>
+        </div>
+        <div className="relative  after:w-full after:h-[1px] after:bg-neutral-500 before:w-full before:h-[1px] before:bg-neutral-500 flex items-center gap-2">
+          OR
         </div>
         <div className="mt-5">{isLogin ? <Login /> : <Register />}</div>
         <div className="text-sm text-center mt-3">
