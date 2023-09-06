@@ -6,7 +6,7 @@ import {
   useLocation,
   useSearchParams,
 } from "react-router-dom";
-import { FaChevronDown, FaFilter, FaSearch } from "react-icons/fa";
+import { FaChevronDown, FaSearch } from "react-icons/fa";
 
 import { allUsers } from "../../app/api/userApi";
 import UserCard from "../../component/Admin/User/UserCard";

@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3500/api/v1/user";
+const baseUrl = "https://laundryservicebackend.onrender.com/api/v1/user";
 const info = JSON.parse(localStorage.getItem("_profile") as string) ?? {
   token: "",
 };
@@ -43,13 +43,13 @@ export const updatePassword = async ({ values }: any) => {
   }
 };
 
-export const showMe = async (newToken: string) => {
+export const showMe = async () => {
   try {
     const data = await fetch(`${baseUrl}/showMe`, {
       method: "GET",
       credentials: "include",
       headers: {
-        Authorization: `Bearer ${newToken}`,
+        Authorization: `Bearer ${token}`,
       },
     });
     return data.json();

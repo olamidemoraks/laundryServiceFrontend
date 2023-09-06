@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3500/api/v1/overview";
+const baseUrl = "https://laundryservicebackend.onrender.com/api/v1/overview";
 const info = JSON.parse(localStorage.getItem("_profile") as string) ?? {
   token: "",
 };

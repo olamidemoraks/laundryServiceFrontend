@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useForm, FieldValues } from "react-hook-form";
-import Input from "../input/Input";
-import Button from "../Utils/Button";
+import React, { useEffect } from "react";
+import { FieldValues, useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
+import { BsCheckCircle, BsXCircleFill } from "react-icons/bs";
 import { useMutation, useQueryClient } from "react-query";
 import { updateAddress } from "../../app/api/userApi";
-import { toast } from "react-hot-toast";
-import { BsCheckCircle, BsXCircleFill, BsPencilFill } from "react-icons/bs";
 import useAuth from "../../hooks/useAuth";
+import Button from "../Utils/Button";
+import Input from "../input/Input";
 
 type UserFormProps = {
   profile: Profile;

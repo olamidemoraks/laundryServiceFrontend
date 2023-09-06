@@ -19,6 +19,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     googleLogout();
     queryClient.removeQueries(["reservation", "showMe"]);
     navigate("/authenticate");
+    window.location.reload();
   };
   return (
     <div className="w-full">

@@ -1,7 +1,7 @@
 import React from "react";
 import Bubble from "./Bubble";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer, zoomIn } from "../../utils/motion";
+import { slideIn, staggerContainer, zoomIn } from "../../utils/motion";
 
 type HeroSectionProps = {};
 

@@ -1,25 +1,13 @@
 import React from "react";
-import ActivityCard from "./ActivityCard";
+import { BiUser } from "react-icons/bi";
 import {
-  FcApproval,
-  FcApprove,
-  FcAreaChart,
-  FcBarChart,
-  FcBearish,
-  FcBusinessman,
   FcComboChart,
-  FcCustomerSupport,
-  FcFeedback,
-  FcHighPriority,
   FcLeave,
-  FcLineChart,
-  FcPieChart,
   FcPlanner,
-  FcProcess,
   FcShipped,
   FcSynchronize,
 } from "react-icons/fc";
-import { BiUser } from "react-icons/bi";
+import ActivityCard from "./ActivityCard";
 
 type ActivitiesProps = {
   overview: Overview | undefined;

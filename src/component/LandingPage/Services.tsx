@@ -1,7 +1,7 @@
 import React from "react";
 import LandingPageLayout from "../Layout/LandingPageLayout";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer, zoomIn } from "../../utils/motion";
+import { fadeIn, staggerContainer, zoomIn } from "../../utils/motion";
 
 type ServicesProps = {};
 

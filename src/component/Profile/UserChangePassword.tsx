@@ -26,6 +26,7 @@ const scheme = yup.object().shape({
 const UserChangePassword: React.FC<UserChangePasswordProps> = ({
   setChangePassword,
 }) => {
+  console.log(setChangePassword);
   const { sendLogout } = useAuth();
   const {
     register,

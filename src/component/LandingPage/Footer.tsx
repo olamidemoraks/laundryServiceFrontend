@@ -1,7 +1,7 @@
 import React from "react";
 import { BsChatDotsFill, BsTelephoneFill } from "react-icons/bs";
 import { motion } from "framer-motion";
-import { slideIn, zoomIn } from "../../utils/motion";
+import { zoomIn } from "../../utils/motion";
 
 type FooterProps = {};
 

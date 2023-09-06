@@ -1,11 +1,6 @@
 import React, { useMemo, useState } from "react";
 import ItemCard from "./ItemCard";
-import {
-  BsCheckCircle,
-  BsChevronDown,
-  BsChevronUp,
-  BsInfoCircleFill,
-} from "react-icons/bs";
+import { BsCheckCircle, BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { AiFillDelete, AiOutlineHistory } from "react-icons/ai";
 import { useMutation, useQueryClient } from "react-query";
 import { deleteUserReservation } from "../../app/api/reservationApi";

@@ -1,6 +1,6 @@
 import React from "react";
-import { AiFillMessage, AiFillPhone } from "react-icons/ai";
-import { BsFillPhoneFill, BsTelephone, BsTelephoneFill } from "react-icons/bs";
+import { AiFillMessage } from "react-icons/ai";
+import { BsTelephoneFill } from "react-icons/bs";
 
 type UserCardProps = {
   users: Profile;

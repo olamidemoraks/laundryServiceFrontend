@@ -1,7 +1,6 @@
 import React from "react";
 import { UseFormRegister, FieldValues, FieldErrors } from "react-hook-form";
 import { AiFillInfoCircle } from "react-icons/ai";
-import { BsPenFill } from "react-icons/bs";
 
 type InputProps = {
   id: string;

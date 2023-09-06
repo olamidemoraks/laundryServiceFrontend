@@ -6,7 +6,6 @@ import {
   BsThreeDotsVertical,
   BsClock,
   BsCalendar2Check,
-  BsThreeDots,
   BsTrash,
   BsEye,
 } from "react-icons/bs";

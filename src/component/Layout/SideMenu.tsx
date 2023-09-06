@@ -2,7 +2,7 @@ import React from "react";
 import { GoHome } from "react-icons/go";
 import { HiHome } from "react-icons/hi";
 import { SlHandbag } from "react-icons/sl";
-import { FaShoppingBag, FaMap } from "react-icons/fa";
+import { FaShoppingBag } from "react-icons/fa";
 import { IoPerson, IoPersonOutline } from "react-icons/io5";
 import { useLocation, Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
