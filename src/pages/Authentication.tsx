@@ -35,7 +35,7 @@ const Authentication: React.FC<AuthenticationProps> = () => {
         toast.success("Successful login");
         navigate("/home");
       } else {
-        toast.error(data?.data ?? "Something went wrong, try again");
+        toast.error(data?.data.message ?? "Something went wrong, try again");
       }
     },
   });

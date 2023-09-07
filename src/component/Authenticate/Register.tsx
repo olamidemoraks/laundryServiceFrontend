@@ -40,11 +40,11 @@ const Register: React.FC<RegisterProps> = () => {
   const mutation = useMutation({
     mutationFn: signup,
     onSuccess: (data) => {
-      if (data?.isError) {
-        toast.error(data?.message);
+      if (!data?.sucess) {
+        toast.error(data?.data.message);
       } else {
         toast.success("Success Registeration");
-        setCredential(data);
+        setCredential(data.data);
         navigate({ pathname: "/home" });
       }
     },

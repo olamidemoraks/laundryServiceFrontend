@@ -36,11 +36,11 @@ const Login: React.FC<LoginProps> = () => {
   const mutation = useMutation({
     mutationFn: login,
     onSuccess: (data) => {
-      if (data?.isError) {
-        toast.error(data?.message);
+      if (!data?.sucess) {
+        toast.error(data?.data.message);
       } else {
         toast.success("Successful login");
-        setCredential(data);
+        setCredential(data.data);
         navigate({ pathname: "/home" });
       }
     },
