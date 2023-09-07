@@ -1,5 +1,6 @@
 //todo fix ${process.env.BASE_URL}
-const baseUrl = `https://laundryservicebackend.onrender.com/api/v1/auth`;
+// const baseUrl = `https://laundryservicebackend.onrender.com/api/v1/auth`;
+const baseUrl = "http://localhost:3500/api/v1/auth";
 
 export const login = async ({ values }: any) => {
   try {
@@ -12,15 +13,9 @@ export const login = async ({ values }: any) => {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    return {
-      sucess: true,
-      data: data.json(),
-    };
+    return data.json();
   } catch (error: any) {
-    return {
-      sucess: false,
-      data: error,
-    };
+    return error;
   }
 };
 export const externalSignin = async ({ values }: any) => {
@@ -34,15 +29,9 @@ export const externalSignin = async ({ values }: any) => {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    return {
-      sucess: true,
-      data: data.json(),
-    };
+    return data.json();
   } catch (error: any) {
-    return {
-      sucess: false,
-      data: error,
-    };
+    return error;
   }
 };
 export const signup = async ({ values }: any) => {
@@ -56,14 +45,8 @@ export const signup = async ({ values }: any) => {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    return {
-      sucess: true,
-      data: data.json(),
-    };
+    return data.json();
   } catch (error: any) {
-    return {
-      sucess: false,
-      data: error,
-    };
+    return error;
   }
 };

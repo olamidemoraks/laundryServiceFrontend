@@ -26,16 +26,16 @@ const Authentication: React.FC<AuthenticationProps> = () => {
     mutationFn: externalSignin,
     onSuccess: async (data) => {
       console.log("data", data);
-      if (data?.sucess) {
+      if (!data?.isError) {
         setCredential({
-          email: data.data.email,
-          name: data.data.name,
+          email: data.email,
+          name: data.name,
           token: googleToken,
         });
         toast.success("Successful login");
         navigate("/home");
       } else {
-        toast.error(data?.data.message ?? "Something went wrong, try again");
+        toast.error(data?.message ?? "Something went wrong, try again");
       }
     },
   });
