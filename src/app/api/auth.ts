@@ -12,9 +12,15 @@ export const login = async ({ values }: any) => {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    return data.json();
+    return {
+      sucess: true,
+      data: data.json(),
+    };
   } catch (error: any) {
-    console.log(error);
+    return {
+      sucess: false,
+      data: error,
+    };
   }
 };
 export const externalSignin = async ({ values }: any) => {
@@ -28,9 +34,15 @@ export const externalSignin = async ({ values }: any) => {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    return data.json();
+    return {
+      sucess: true,
+      data: data.json(),
+    };
   } catch (error: any) {
-    console.log(error);
+    return {
+      sucess: false,
+      data: error,
+    };
   }
 };
 export const signup = async ({ values }: any) => {
@@ -44,8 +56,14 @@ export const signup = async ({ values }: any) => {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    return data.json();
+    return {
+      sucess: true,
+      data: data.json(),
+    };
   } catch (error: any) {
-    return error;
+    return {
+      sucess: false,
+      data: error,
+    };
   }
 };
