@@ -24,7 +24,7 @@ export const createReservation = async ({ values }: any) => {
   }
 };
 
-export const getUserReservation = async (newToken: string = "") => {
+export const getUserReservation = async (newToken = "") => {
   console.log("newtoken", newToken);
   console.log("token", token);
   try {
