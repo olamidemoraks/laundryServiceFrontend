@@ -1,5 +1,5 @@
 //todo fix ${process.env.BASE_URL}
-const baseUrl = `https://laundryservicebackend.onrender.com/api/v1/auth`;
+const baseUrl = `https://excel-laundary.onrender.com/api/v1/auth`;
 // const baseUrl = "http://localhost:3500/api/v1/auth";
 
 export const login = async ({ values }: any) => {
