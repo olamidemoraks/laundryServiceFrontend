@@ -1,4 +1,4 @@
-const baseUrl = "https://excel-laundary.onrender.com/api/v1/user";
+const baseUrl = "https://laundryservicebackend-cmmh.onrender.com/api/v1/user";
 const info = JSON.parse(localStorage.getItem("_profile") as string) ?? {
   token: "",
 };
